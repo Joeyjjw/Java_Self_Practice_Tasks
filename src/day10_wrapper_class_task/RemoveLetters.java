@@ -1,6 +1,16 @@
 package day10_wrapper_class_task;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class RemoveLetters {
+    public static void main(String[] args) {
+        ArrayList<Character> list = new ArrayList<>();
+        list.addAll(Arrays.asList('$', 'A', 'B', '1', '2', 'c', 'd', '@', '!', '3', '4'));
+
+        list.removeIf(p-> Character.isLetter(p));
+        System.out.println(list);
+    }
 }
 /*
 Create a class called RemoveLetters and write a program with the following steps:

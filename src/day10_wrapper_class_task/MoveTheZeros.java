@@ -1,6 +1,19 @@
 package day10_wrapper_class_task;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
 public class MoveTheZeros {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+
+        list.addAll(Arrays.asList(1,0,2,0,3,0,4,0));
+        Collections.sort(list);
+        Collections.rotate(list, 4);
+        System.out.println(list);
+
+    }
 }
 /*
 Create a class called MoveTheZeros and write a program with the following specifications:
