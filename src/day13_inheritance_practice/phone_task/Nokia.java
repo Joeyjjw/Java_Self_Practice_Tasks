@@ -1,6 +1,10 @@
 package day13_inheritance_practice.phone_task;
 
-public class Nokia {
+public class Nokia extends Phone{
+
+    public Nokia(String brand, String model, String size, double price, String color) {
+        super(brand, model, size, price, color);
+    }
 }
 
 /*

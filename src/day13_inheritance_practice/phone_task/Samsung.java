@@ -1,6 +1,9 @@
 package day13_inheritance_practice.phone_task;
 
-public class Samsung {
+public class Samsung extends Phone {
+    public Samsung(String brand, String model, String size, double price, String color) {
+        super(brand, model, size, price, color);
+    }
 }
 /*
  Create a class named 'Samsung' with these specifications:
