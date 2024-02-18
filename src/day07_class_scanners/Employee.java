@@ -1,6 +1,7 @@
 package day07_class_scanners;
 
 public class Employee {
+
     public String name;
     public int age; // instance can store many different values
     public char gender;
