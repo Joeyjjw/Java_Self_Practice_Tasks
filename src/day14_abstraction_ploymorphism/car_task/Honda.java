@@ -6,6 +6,10 @@ public class Honda extends Car {
         super(make, model, year, price, color);
     }
 
+    public Honda(String make, String model, int year, double price) {
+        super(make, model, year, price);
+    }
+
     @Override
     public void start() {
         System.out.println(getMake()+getModel() + " has a start button to push to start");

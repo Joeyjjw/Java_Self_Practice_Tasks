@@ -5,6 +5,10 @@ public class Audi extends Car implements AutoPark{
         super(make, model, year, price, color);
     }
 
+    public Audi(String make, String model, int year, double price) {
+        super(make, model, year, price);
+    }
+
     @Override
     public void autoPark() {
         System.out.println(getMake()+ getModel() + " has auto park");

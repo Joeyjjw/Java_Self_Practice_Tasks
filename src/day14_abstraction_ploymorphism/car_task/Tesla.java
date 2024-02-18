@@ -5,6 +5,10 @@ public class Tesla extends Car implements AutoPark, AutoPilot{
         super(make, model, year, price, color);
     }
 
+    public Tesla(String make, String model, int year, double price) {
+        super(make, model, year, price);
+    }
+
     @Override
     public void autoPark() {
         System.out.println(getMake() + getModel() + " can park by itself");
