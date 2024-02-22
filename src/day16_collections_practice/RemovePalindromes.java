@@ -10,9 +10,9 @@ public class RemovePalindromes {
         list.addAll(Arrays.asList("Java", "Python", "Cydeo", "Car", "Level", "civic", "radar", "kayak",
                 "reviver", "racecar", "madam"));
 
-        list.remove(4);
 
     }
+
 }
 
 /*
