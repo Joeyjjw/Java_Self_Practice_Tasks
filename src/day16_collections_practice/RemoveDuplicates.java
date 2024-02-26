@@ -7,7 +7,7 @@ public class RemoveDuplicates {
 
        // Set<Integer> set = new LinkedHashSet<>();
         //set.addAll(Arrays.asList(20, 15, 10, 20, 30, 10, 20, 15, 0));
-        //It will remove duplicates, but How can I sort it???
+
 
         List<Integer> numbers = new ArrayList<>();
         numbers.addAll(Arrays.asList(20, 15, 10, 20, 30, 10, 20, 15, 0));
