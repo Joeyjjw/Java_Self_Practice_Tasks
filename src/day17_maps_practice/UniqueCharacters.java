@@ -1,7 +1,5 @@
 package day17_maps_practice;
 
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,14 +11,6 @@ public class UniqueCharacters {
 
         Map<String, Integer> uniqueMap = new HashMap<>();
 
-        for (String each : str.split("")) {
-
-            if (Collections.frequency(Arrays.asList(str.split("")), each) == 1) {
-                uniqueMap.put(each, 1);
-            }
-        }
-
-        System.out.println(uniqueMap);
     }
 
     }
