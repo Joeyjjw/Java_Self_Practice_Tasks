@@ -1,16 +1,26 @@
 package day17_maps_practice;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class UniqueCharacters {
 
-    public static void main(String[] args) {
-        String str = "aabcccdeeeef";
 
 
-        Map<String, Integer> uniqueMap = new HashMap<>();
+        public static void main(String[] args) {
 
+            String str1 = "aabcccdeeeef";
+
+            Map<String, Integer> map = new LinkedHashMap<>();
+
+            for (String each : str1.split("")) {
+                int frequency = Collections.frequency(Arrays.asList(str1.split("")), each);
+                if(frequency == 1) { //if its =1 , then its unique
+                    map.put(each, frequency);
+                }
+
+
+            }
+            System.out.println(map);
     }
 
     }
