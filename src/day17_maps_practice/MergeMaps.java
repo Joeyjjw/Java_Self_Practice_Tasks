@@ -4,25 +4,24 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MergeMaps {
-    public static void main(String[] args) {
 
-        Map<Character, Integer> map1 = new HashMap<>();
-        map1.put('A', 10);
-        map1.put('B', 20);
+        public static void main(String[] args) {
+            Map<String, Integer> map1 = new HashMap<>();
+            map1.put("A", 10);
+            map1.put("B", 20);
 
-        Map<Character, Integer> map2 = new HashMap<>();
-        map2.put('B', 30);
-        map2.put('C', 40);
+            Map<String, Integer> map2 = new HashMap<>();
+            map2.put("B", 30);
+            map2.put("C", 40);
+
+            // If key already exists in mergedMap, add the values together
+            Map<String, Integer> mergedMap = new HashMap<>(map1);
+            map2.forEach((key, value) -> mergedMap.merge(key, value, Integer::sum));
+
+            System.out.println(mergedMap);
 
 
-            Map<Character, Integer> map3 = new HashMap<>(map1);
-            map3.putAll(map1);
-            map3.putAll(map2);
-
-
-        System.out.println(map3);
-
-    }
+        }
 }
 
 /*
